@@ -1,11 +1,12 @@
 {
-  "name": "Medusa Codespace",
+  "name": "Medusa Payment Plugins Dev",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
-  "forwardPorts": [3000, 5432, 6379, 7700],
   "workspaceFolder": "/workspaces/medusa-payment-plugins",
-  "runServices": ["postgres", "redis", "search"],
-  "service": "postgres",
+  "forwardPorts": [3000, 5432, 6379, 7700],
   "shutdownAction": "stopCompose",
   "dockerComposeFile": ["docker-compose.yml"],
-  "remoteUser": "node"
+  "runServices": ["postgres", "redis", "search"],
+  "service": "postgres",
+  "remoteUser": "node",
+  "extensions": []
 }
